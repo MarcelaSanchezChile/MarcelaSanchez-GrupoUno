@@ -1,0 +1,66 @@
+body{
+background-color: peachpuff;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 500vh;
+
+}
+.galletas-contenedor {
+  width: 100%; /* ocupar el ancho de la pagina */
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente los items dentro del contenedor */
+  flex-direction: column; /* Organiza los elementos en una columna */
+  text-align: center;
+  margin: 20px auto; /* centra el contenedor verticalmente y añade espacio arriba y abajo */
+}
+.galletas-contenedor h1 {
+  font-size: 100px; /* Tamaño de fuente para el título */
+  margin-bottom: 100px; /* Espacio debajo del título */
+}
+.galletas-fila {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se acomoden en múltiples filas si es necesario */
+  justify-content: center; /* Centra los elementos horizontalmente dentro del contenedor */
+  align-items: center; /* Alinea verticalmente las tarjetas de galletas */
+  margin-bottom: 300px;
+}
+
+.galletas-item {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+  box-sizing: border-box; /*asegura que el padding y el borde se incluyan en el ancho total */
+  text-align: center;
+}
+
+.galletas-item img {
+  width: 100%;
+  height: 100px;  /* Fija una altura para todas las imágenes */
+  object-fit: cover;  /* Recorta la imagen para que llene el contenedor sin distorsionarse */
+  border-radius: 8px;
+}
+
+.galletas-item h3 {
+  width: auto;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.texto-delivery{
+  width: auto;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+
+.delivery-icon img {
+  text-align: center;
+  width: 200px;
+  margin-top: 100px;
+}
