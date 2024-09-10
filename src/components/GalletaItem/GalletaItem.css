@@ -1,0 +1,21 @@
+.GalletaItem {
+    background-color: #f9f9f9; /* Fondo claro */
+    border: 2px solid #ccc; /* Borde gris */
+    border-radius: 8px; /* Esquinas redondeadas */
+    padding: 16px; /* Espaciado interno */
+    max-width: 300px; /* Ancho máximo del componente */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 16px auto; /* Espaciado externo centrado */
+}
+
+.GalletaItem h1 {
+    font-size: 24px; /* Tamaño de fuente para el título */
+    color: #333; /* Color del texto */
+    margin-bottom: 12px; /* Espaciado inferior */
+}
+
+.GalletaItem img {
+    max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
+    border-radius: 4px; /* Esquinas redondeadas para la imagen */
+}
