@@ -1,0 +1,32 @@
+.header {
+    width: 100vw;
+    background-color: hotpink;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+    font-family: "Palatino Linotype";
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4f4fc7; /* Color azul más claro */
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    background-color: #0033cc;
+    border-radius: 5px;
+}
