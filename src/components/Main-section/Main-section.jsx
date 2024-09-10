@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Main from './Main.css';
+
 import ImagenTarjeta from "../ImagenTarjeta/ImagenTarjeta.jsx";
 
 const MainSection = ({ titulo, contenido, imagenSrc,imagenAlt }) => {
