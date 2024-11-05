@@ -1,45 +1,28 @@
-
-import './App.css'; /*Importa el archivo CSS que contiene los estilos aplicados a los components dentro del archivo App.jsx */
-
-import Footer from "./components/Footer/Footer.jsx";
+import './App.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from "./components/Header/Header.jsx";
-import Bajada from "./components/Bajada/Bajada.jsx";
-import MainSection from "./components/Main-section/Main-section.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Home from "./components/Home/Home.jsx";
+import Galletadechips from "./components/Galletadechips/Galletadechips.jsx";
+import Blog from "./components/Blog/Blog.jsx";
+import Mejoresproductos from "./components/MejoresProductos/Mejoresproductos.jsx";
 function App() {
     return (
         <>
+            <BrowserRouter>
             <Header/>
-            <Bajada/>
-            <div className="contenido">
-            <MainSection
-                titulo=" Galletas de azucar"
-                contenido="este es el contenido"
-                imagenSrc="src/assets/images/galletas abeja.jpg"
-                imagenAlt="descripcion de la imagen"
-            />
-                <MainSection
-                    titulo="hola"
-                    contenido="este es el contenido"
-                    imagenSrc="src/assets/images/galletas abeja.jpg"
-                    imagenAlt="descripcion de la imagen"
-                />
-                <MainSection
-                    titulo="hola"
-                    contenido="este es el contenido"
-                    imagenSrc="src/assets/images/galletas abeja.jpg"
-                    imagenAlt="descripcion de la imagen"
-                />
-
-                <MainSection
-                    titulo="hola"
-                    contenido="este es el contenido"
-                    imagenSrc="src/assets/images/galletas abeja.jpg"
-                    imagenAlt="descripcion de la imagen"
-                />
-
-            </div>
-            <Footer/>
+                <Routes>
+                    <Route path='/' element={<Home/>} />
+                    <Route path='/galletaclasica' element={<Galletadechips/>}/>
+                    <Route path='/blog' element={<Blog/>}/>
+                    <Route path='/mejoresproductos' element={<Mejoresproductos/>}/>
+                </Routes>
+                <Footer/>
+            </BrowserRouter>
         </>
     );
 }
+
+
 export default App;
