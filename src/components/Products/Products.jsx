@@ -1,4 +1,4 @@
-import ItemList from "../ItemList/ItemList.jsxnpm";
+import ItemList from "../ItemList/ItemList.jsx";
 
 export default function ProductPage(){
 

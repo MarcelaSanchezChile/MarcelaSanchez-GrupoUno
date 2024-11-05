@@ -43,6 +43,7 @@ export default function Header (){
                     <i className="fa-solid fa-bars"></i>
                     <ul className="menu">
                         <li><Link to="/">Inicio</Link></li>
+                        <li><Link to='/category/:categoryId'>Categorias</Link></li>
                         <li><Link to='/galletaclasica'>Galleta Clasica de Chips</Link></li>
                         <li><Link to='/blog'>Blog</Link></li>
                         <li><Link to="/mejoresproductos">Mejores Productos</Link></li>
