@@ -19,7 +19,6 @@ function App() {
                     <Route path='/category/:categoryId' element={<ProductsCategory />} />
                     <Route path='/blog' element={<Blog/>}/>
                     <Route path='/mejoresproductos' element={<Mejoresproductos/>}/>
-
                 </Routes>
                 <Footer/>
             </BrowserRouter>

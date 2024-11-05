@@ -47,7 +47,6 @@ import './Footer.css'
 
                     <div className="my-account">
                         <p className="title-footer">Mi cuenta</p>
-
                         <ul>
                             <li><a href="#">Mi cuenta</a></li>
                             <li><a href="#">Historial de ordenes</a></li>
