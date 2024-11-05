@@ -58,14 +58,6 @@ export default function ItemDetail() {
                 <div>
                     <h1 className='text-[45px] font-medium uppercase'>{product.name}</h1>
                     <p className='text-[20px] my-[20px]'>{product.despcription}</p>
-                    <div>
-                        <h3>Tallas disponibles:</h3>
-                        <ul className='flex'>
-                            {product.sizes.map((size, index) => (
-                                <li key={index} className='text-[20px] my-[20px] border-[1px] w-[50px] flex justify-center mx-[10px]'>{size}</li>
-                            ))}
-                        </ul>
-                    </div>
                     <p className='text-[20px] my-[20px]'>Stock: {product.stock}</p>
 
                     <div className='flex'>
