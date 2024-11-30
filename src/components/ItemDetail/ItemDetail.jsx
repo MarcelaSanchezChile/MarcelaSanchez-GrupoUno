@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { useParams } from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
 import { getProductById } from '../../data/asyncMock.jsx';
 
 import Loading from '../Loading/Loading.jsx';
@@ -51,6 +51,26 @@ export default function ItemDetail() {
 
     return (
         <div className='container mx-auto max-w-[1170px]'>
+            <Link to="/category/:categoryId">
+                <button onClick={() => {
+                }} className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700"> Todas
+                </button>
+            </Link>
+            <Link to="/products/4">
+                <button onClick={() => {
+                }} className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700">Galletas clasicas
+                </button>
+            </Link>
+            <Link to="/products/3">
+                <button onClick={() => {
+                }} className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700">Galletas de
+                    Chocolate
+                </button>
+            </Link>
+            <Link to="/products/2">
+                <button onClick={() => {}} className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700">Galletas de azucar</button>
+            </Link>
+
             <div className="grid grid-cols-2 pt-[50px] pb-[100px]">
                 <div className="span-col-1 pr-[30px]">
                     <img src={product.img} alt="Imagen del producto" className='w-full rounded-[20px]'/>

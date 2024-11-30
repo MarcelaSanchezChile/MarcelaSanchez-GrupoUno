@@ -7,8 +7,9 @@ import Home from "./components/Home/Home.jsx";
 import Galletadechips from "./components/Galletadechips/Galletadechips.jsx";
 import Blog from "./components/Blog/Blog.jsx";
 import Mejoresproductos from "./components/MejoresProductos/Mejoresproductos.jsx";
-import ProductsCategory from "./components/Category/Category.jsx";
+import Category from "./components/Category/Category.jsx";
 import ItemDetail from "./components/ItemDetail/ItemDetail.jsx";
+
 
 function App() {
     return (
@@ -18,7 +19,7 @@ function App() {
                 <Routes>
                     <Route path='/' element={<Home/>} />
                     <Route path='/galletaclasica' element={<Galletadechips/>}/>
-                    <Route path='/category/:categoryId' element={<ProductsCategory />} />
+                    <Route path='/category/:categoryId' element={<Category />} />
                     <Route path='/products/:productId' element={<ItemDetail />} />
                     <Route path='/blog' element={<Blog/>}/>
                     <Route path='/mejoresproductos' element={<Mejoresproductos/>}/>

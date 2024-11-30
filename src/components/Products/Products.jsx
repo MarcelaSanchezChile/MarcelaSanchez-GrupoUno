@@ -4,7 +4,8 @@ export default function ProductPage(){
 
     return(
         <div className="container mx-auto">
-            <ItemList />
+
+            <ItemList/>
         </div>
     )
 }
