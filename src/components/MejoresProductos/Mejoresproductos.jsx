@@ -15,7 +15,7 @@ export default function Mejoresproductos (){
 
                 <div className="card-product">
                     <div className="container-img">
-                        <img src="/Galletaclasica3.jpg" alt="Galleta clasica de chips"/>
+                        <img src="/mejoresproductos2.jpg" alt="Galleta clasica de chips"/>
                         <span className="discount">-13%</span>
                         <div className="button-group">
 								<span>
@@ -48,7 +48,7 @@ export default function Mejoresproductos (){
                 <div className="card-product">
                     <div className="container-img">
                         <img
-                            src="/mantequilla%20cacaogeo.jpg"
+                            src="/mejoresproductos.jpg"
                             alt="Galleta de azucar y cacao"
                         />
                         <span className="discount">-22%</span>
@@ -83,7 +83,7 @@ export default function Mejoresproductos (){
                 <div className="card-product">
                     <div className="container-img">
                         <img
-                            src="/Chocolate2.jpg"
+                            src="/mejoresproductos1.jpg"
                             alt="Galletas de Chocolate"
                         />
                         <div className="button-group">

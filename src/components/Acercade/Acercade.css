@@ -1,0 +1,25 @@
+
+
+.acercade {
+    text-align: center;
+    background-color: #DA8676;
+    width: 100%;
+    min-height: 100vh;
+}
+.acercade h1{
+    text-align: center;
+    color: #2400F5;
+
+}
+.acercade img{
+    width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+.acercade p{
+    display: block;
+    font-size: 15px;
+    margin:20px auto;
+    width: 800px;
+}

@@ -27,10 +27,11 @@
 }
 .feature-content span{
     font-weight:700;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: black;
 }
 .feature-content p{
     color:#777;
     font-weight: 500;
+    font-size: 1.4rem;
 }

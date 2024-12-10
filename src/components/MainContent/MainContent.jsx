@@ -27,7 +27,7 @@ import './MainContent.css';
              <div className="card-feature">
                  <i className="fa-solid fa-headset"></i>
                  <div className="feature-content">
-                     <span>Servicio añ Cliente</span>
+                     <span>Servicio al Cliente</span>
                      <p> Llamanos 24/7 al 123-456-7890</p>
                  </div>
              </div>

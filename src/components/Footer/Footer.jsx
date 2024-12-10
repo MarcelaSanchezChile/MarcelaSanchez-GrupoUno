@@ -1,4 +1,5 @@
 import './Footer.css'
+import {Link} from 'react-router-dom';
 
  export default function Footer (){
 
@@ -37,7 +38,7 @@ import './Footer.css'
                     <div className="information">
                         <p className="title-footer">Información</p>
                         <ul>
-                            <li><a href="#">Acerca de Nosotros</a></li>
+                            <li>< Link to= '/acercade' >Acerca de Nosotros</Link></li>
                             <li><a href="#">Información Delivery</a></li>
                             <li><a href="#">Politicas de Privacidad</a></li>
                             <li><a href="#">Términos y condiciones</a></li>
@@ -72,7 +73,7 @@ import './Footer.css'
 
                 <div className="copyright">
                     <p>
-                        Desarrollado por Marcela &copy; 2022
+                        Desarrollado por Marcela &copy; 2024
                     </p>
 
                 </div>

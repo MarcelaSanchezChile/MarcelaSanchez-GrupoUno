@@ -1,3 +1,4 @@
+import './Products.css'
 import ItemList from "../ItemList/ItemList.jsx";
 
 export default function ProductPage(){

@@ -1,8 +1,8 @@
 import './Header2.css';
 import {Link} from 'react-router-dom';
+import useStore from "../../UseStore/UseStore.jsx";
 
 export default function Header (){
-
 
     return(
         <div>
@@ -29,7 +29,7 @@ export default function Header (){
 
                     <div className="container-user">
                         <i className="fa-solid fa-user"></i>
-                        <i className="fa-solid fa-basket-shopping"></i>
+                        <Link to='/carrito'><i className="fa-solid fa-basket-shopping"></i></Link>
                         <div className="content-shopping-cart">
                             <span className="text">Carrito</span>
                             <span className="number">(0)</span>
@@ -44,9 +44,10 @@ export default function Header (){
                     <ul className="menu">
                         <li><Link to="/">Inicio</Link></li>
                         <li><Link to='/category/:categoryId'>Productos</Link></li>
-                        <li><Link to='/galletaclasica'>Galleta Clasica de Chips</Link></li>
                         <li><Link to='/blog'>Blog</Link></li>
                         <li><Link to="/mejoresproductos">Mejores Productos</Link></li>
+                        <li>< Link to='/acercade'>Acerca de Nosotros</Link></li>
+                        <li>< Link to='/contacto'> Contáctanos</Link></li>
                     </ul>
 
                     <form className="search-form">
