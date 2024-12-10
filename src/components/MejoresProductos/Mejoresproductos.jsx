@@ -1,4 +1,5 @@
 import './Mejoresproductos.css'
+import Proximamente from "../Proximamente/Proximamente.jsx";
 export default function Mejoresproductos (){
     return (
         <div className="mejoresproductos">
@@ -146,6 +147,7 @@ export default function Mejoresproductos (){
                 </div>
             </div>
         </section>
+           <Proximamente/>
         </div>
 
     )

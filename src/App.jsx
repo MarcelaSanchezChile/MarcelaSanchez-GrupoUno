@@ -12,6 +12,7 @@ import ItemDetail from "./components/ItemDetail/ItemDetail.jsx";
 import CartPage from "./components/Cart/Cart.jsx";
 import Acercade from "./components/Acercade/Acercade.jsx";
 import Contacto from "./components/Contacto/Contacto.jsx";
+import Recetas from "./components/Recetas/Recetas.jsx";
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                     <Route path='/acercade' element ={<Acercade/>}/>
                     <Route path='/contacto' element ={<Contacto/>}/>
                     <Route path='/carrito' element={<CartPage/>}/>
+                    <Route path='/recetas' element={<Recetas/>}/>
                 </Routes>
                 <Footer/>
             </BrowserRouter>

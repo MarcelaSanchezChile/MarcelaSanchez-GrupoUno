@@ -1,4 +1,6 @@
+import './Category.css'
 // HOOKS DE REACT PARA USESTATE Y EFFECT
+
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
@@ -12,6 +14,7 @@ import ItemList from "../ItemList/ItemList";
 
 // IMPORTO EL LOADING
 import Loading from "../Loading/Loading";
+import Otros from "../Otros/Otros.jsx";
 
 export default function Category(){
     const [loading, setLoading] = useState(true);
@@ -28,6 +31,7 @@ export default function Category(){
 
 
     return(
+        <div className="category">
         <div className="container mx-auto max-w-[1170px]">
             <Link to="/category/:categoryId">
             <button onClick={() => {
@@ -56,6 +60,9 @@ export default function Category(){
 
                 <ItemList products={products}/>
             )}
+        </div>
+            <Otros/>
+
         </div>
     )
 };

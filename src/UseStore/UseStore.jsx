@@ -9,12 +9,36 @@ const useStore = create((set) => ({
         if (existingItem) {
             newCart = state.cart.map(cartItem =>
                 cartItem.id === item.id
-                    ? { ...cartItem, quantity: cartItem.quantity + 1 }
+                    ? { ...cartItem, quantity: cartItem.quantity + item.quantity }
                     : cartItem
             );
         } else {
-            newCart = [...state.cart, { ...item, quantity: 1 }];
+            newCart = [...state.cart, { ...item }];
         }
+        const newTotal = newCart.reduce((acc, cartItem) => acc + (cartItem.price * cartItem.quantity), 0);
+        return {
+            cart: newCart,
+            total: newTotal
+        };
+    }),
+    incrementQuantity: (item) => set((state) => {
+        const newCart = state.cart.map(cartItem =>
+            cartItem.id === item.id && cartItem.quantity < item.stock
+                ? { ...cartItem, quantity: cartItem.quantity + 1 }
+                : cartItem
+        );
+        const newTotal = newCart.reduce((acc, cartItem) => acc + (cartItem.price * cartItem.quantity), 0);
+        return {
+            cart: newCart,
+            total: newTotal
+        };
+    }),
+    decrementQuantity: (item) => set((state) => {
+        const newCart = state.cart.map(cartItem =>
+            cartItem.id === item.id && cartItem.quantity > 1
+                ? { ...cartItem, quantity: cartItem.quantity - 1 }
+                : cartItem
+        ).filter(cartItem => cartItem.quantity > 0);
         const newTotal = newCart.reduce((acc, cartItem) => acc + (cartItem.price * cartItem.quantity), 0);
         return {
             cart: newCart,

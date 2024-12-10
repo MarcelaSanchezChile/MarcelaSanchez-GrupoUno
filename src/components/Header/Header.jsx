@@ -1,11 +1,15 @@
 import './Header2.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import useStore from "../../UseStore/UseStore.jsx";
+import TituloRotatorio from "../Titulorotatorio/Titulorotatorio.jsx";
 
-export default function Header (){
+export default function Header() {
+    const cart = useStore(state => state.cart); // Obtener el estado del carrito
+    const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0); // Calcular el precio total
 
-    return(
+    return (
         <div>
+            <TituloRotatorio/>
             <div className="container-hero">
                 <div className="container hero">
                     <div className="customer-support">
@@ -32,7 +36,7 @@ export default function Header (){
                         <Link to='/carrito'><i className="fa-solid fa-basket-shopping"></i></Link>
                         <div className="content-shopping-cart">
                             <span className="text">Carrito</span>
-                            <span className="number">(0)</span>
+                            <span className="number">(${Math.floor(totalPrice)})</span> {/* Mostrar precio total sin decimales */}
                         </div>
                     </div>
                 </div>
@@ -44,24 +48,21 @@ export default function Header (){
                     <ul className="menu">
                         <li><Link to="/">Inicio</Link></li>
                         <li><Link to='/category/:categoryId'>Productos</Link></li>
-                        <li><Link to='/blog'>Blog</Link></li>
                         <li><Link to="/mejoresproductos">Mejores Productos</Link></li>
-                        <li>< Link to='/acercade'>Acerca de Nosotros</Link></li>
-                        <li>< Link to='/contacto'> Contáctanos</Link></li>
+                        <li><Link to='/acercade'>Acerca de Nosotros</Link></li>
+                        <li><Link to='/recetas'> Recetas </Link></li>
+                        <li><Link to='/blog'>Blog</Link></li>
+                        <li><Link to='/contacto'>Contáctanos</Link></li>
                     </ul>
 
                     <form className="search-form">
-                    <input type="search" placeholder="Buscar..."/>
+                        <input type="search" placeholder="Buscar..."/>
                         <button className="btn-search">
                             <i className="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </form>
                 </nav>
             </div>
-
         </div>
-
-
-    )
+    );
 }
-
